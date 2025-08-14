@@ -1,0 +1,114 @@
+/*-------------------------------------
+      1. Programs 
+--------------------------------------*/
+.programs_container {
+  padding: 5% 0;
+  background: #fff;
+}
+.program_frame {
+}
+.program_content {
+}
+.program_img img {
+  width: 400px;
+  height: 600px;
+}
+.program_text {
+}
+.program_overlay {
+  padding: 3% 5%;
+  z-index: 2;
+  background: #ffffffaa;
+  backdrop-filter: blur(5px);
+  border-radius: 5px;
+  box-shadow: 0 0 5px #aaa;
+}
+.program_text h2 {
+}
+.program_text p {
+  margin: 2% 0 4%;
+  /* line-height: 24px; */
+}
+.program_text a {
+  text-align: center;
+  background: #111;
+  width: 100px;
+  color: #fff;
+  transition: 0.2s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 7px;
+  font-size: 14px;
+}
+.program_text i {
+  color: #fff;
+  font-size: 17px;
+  margin-right: 5px;
+}
+.program {
+  display: flex;
+}
+.navigation {
+  padding: 10px 0;
+}
+.navigation a {
+  color: #cf6185;
+  background: none;
+}
+.navigation i {
+  color: #cf6185;
+}
+
+/* ---------------------- */
+/*   2. Mineral table     */
+table {
+  width: 420px;
+  margin: 8% 0 2%;
+  padding: 10px;
+  background: #f2f2f2;
+}
+th {
+  padding: 10px;
+}
+td {
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+}
+tr:nth-child(even) {
+  background: #74ccf455;
+}
+
+@media screen and (max-width: 1000px) {
+  .program {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  table {
+    width: 80%;
+  }
+  .program_img img {
+    /* width: 100%;
+    height: auto; */
+  }
+}
+@media screen and (max-width: 600px) {
+  .program_overlay {
+    /* padding: 0%; */
+  }
+  table {
+    width: 100%;
+  }
+  td span {
+    margin-left: 15px;
+  }
+  .program_img img {
+    width: 100%;
+    height: auto;
+  }
+  .program_text a {
+    justify-content: flex-start;
+  }
+}
